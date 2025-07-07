@@ -55,13 +55,23 @@
 - middle_name VARCHAR(30) NULL
 - last_name VARCHAR(50) NOTNULL 
 - email VARCHAR(100) NOTNULL UNIQUE
-- student_id INT NOTNULL UNIQUE
+- student_id INT NOTNULL 
 - enrollment_y DATE NOTNULL
 - degree_id (FK) 
 
 ### grades
 
 - id (PK) BIGINT PRIMARY KEY AUTO_INCREMENT NOTNULL UNIQUE
-- is_passed TINYINT NOTNULL
-- grade TINYINT NULL
+- grade TINYINT NOTNULL
+- is_passed TINYINT NULL
 - exam_round_id (FK) 
+
+### pivot: exam_rounds-grades
+
+- exam_round_id INT NOTNULL
+- grade_id INT NOTNULL
+
+### pivot grades-students
+
+- grade_id INT NOTNULL
+- student_id INT NOTNULL
