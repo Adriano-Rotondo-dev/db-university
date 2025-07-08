@@ -14,3 +14,10 @@ sono presenti diversi Dipartimenti (es.: Lettere e Filosofia, Matematica, Ingegn
 
 Utilizzare https://www.drawio.com/ per la creazione dello schema.
 Esportare quindi il diagramma in pnge caricarlo nella repo come visto in classe
+
+# db-university 
+
+## Parte 2
+Dopo aver creato un nuovo database nel vostro MySQL Workbench e aver importato lo schema allegato, eseguite le query del file allegato.
+### Cosa consegnare?
+Dopo aver testato le vostre query con MySQL Workbench, riportatele in un file txt e caricatelo nella vostra repo.
