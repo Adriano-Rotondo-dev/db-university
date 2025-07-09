@@ -97,7 +97,7 @@ FROM `exams`
 JOIN `exam_student`
 on `exam_student`.`exam_id` = `exams.id`
 JOIN `students`
-on `students`.`id`=`exam_studen`.`student_id`
+on `students`.`id`=`exam_student`.`student_id`
 WHERE `vote` >= 18
 GROUP BY `student_id`, `exam_id`
 ```
