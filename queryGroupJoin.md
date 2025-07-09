@@ -8,12 +8,21 @@ GROUP BY YEAR(`enrolment_date`)
 ```
 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio 
 ```sql
+SELECT COUNT(*) AS `same_office_same_building`, `office_address` AS `building` 
+FROM `teachers`
+GROUP BY (`building`)
 ```
 3. Calcolare la media dei voti di ogni appello d'esame 
 ```sql
+SELECT ROUND(AVG(`vote`),2) AS `average_vote`
+FROM `exam_student`
+GROUP BY `exam_id`
 ```
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
 ```sql
+SELECT COUNT(*), `name` AS `department_name`
+FROM `degrees`
+GROUP BY `name`
 ```
 
 ## Join:
